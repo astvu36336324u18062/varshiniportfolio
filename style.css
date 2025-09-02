@@ -1,0 +1,110 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    color: black;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header .intro {
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background-color: #ffccd9;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* Animation: Fade In from Bottom */
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply Animation to Sections */
+section {
+    animation: slideUp 1s ease-out;
+}
+
+header {
+    animation: slideUp 1s ease-out;
+}
+
+footer {
+    animation: slideUp 1s ease-out;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header .intro {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+}
